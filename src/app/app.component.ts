@@ -21,5 +21,9 @@ export class AppComponent {
       name: 'Third Attribute',
       id: 'ThirdId'
     },
-  ]
+  ];
+
+  public getNewId(data: any) {
+    return `${data.name} ${data.id}`
+  }
 }
