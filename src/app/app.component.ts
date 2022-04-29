@@ -24,6 +24,7 @@ export class AppComponent {
   ];
 
   public getNewId(data: any) {
-    return `${data.name} ${data.id}`
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    return `${data.name} ${data.id} ${randomNumber}`;
   }
 }
