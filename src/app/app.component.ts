@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'htmlIdAttribute';
+
+  public dataWithId = [
+    {
+      name: 'First Attribute',
+      id: 'FirstId'
+    },
+    {
+      name: 'Second Attribute',
+      id: 'SecondId'
+    },
+    {
+      name: 'Third Attribute',
+      id: 'ThirdId'
+    },
+  ]
 }
