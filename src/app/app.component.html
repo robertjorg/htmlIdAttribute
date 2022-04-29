@@ -1,7 +1,7 @@
-<div class="container" *ngFor="let data of dataWithId">
-  <div [attr.id]="getNewId(data)">
+<div class="container" *ngFor="let data of dataWithId" [attr.id]="getNewId(data)">
+  <div [attr.id]="data.id">
     This is the data item name: {{data.name}}<br/>
-    This is the data item id: {{data.id}}<br/>
-    This is the dynamic Id created from a method: {{data.name}} {{data.id}}<br/>
+    This is the data item id and the div id on the child element: {{data.id}}<br/>
+    This is the dynamic Id created from a method for the parent id: '{{data.name}} {{data.id}}' <- Check it out in dev tools!<br/>
   </div>
 </div>
